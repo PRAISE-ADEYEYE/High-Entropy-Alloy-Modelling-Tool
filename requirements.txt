@@ -4,3 +4,4 @@ sympy
 tabulate
 streamlit
 seaborn
+sklearn
