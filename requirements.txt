@@ -4,4 +4,7 @@ sympy
 tabulate
 streamlit
 seaborn
-sklearn
+sklearn.ensemble
+RandomForestRegressor
+sklearn.model_selection               
+sklearn.metrics   
