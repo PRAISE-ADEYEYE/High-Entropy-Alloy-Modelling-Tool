@@ -3,3 +3,4 @@ numpy
 sympy
 tabulate
 streamlit
+seaborn
