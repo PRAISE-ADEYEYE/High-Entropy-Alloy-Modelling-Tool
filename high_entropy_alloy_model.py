@@ -124,6 +124,20 @@ def interactive_prediction():
 # --------------------------
 def main():
     st.title("High Entropy Alloy Modeller")
+    
+    # === HEADER with emojis and quotes ===
+    st.markdown(
+        """
+        <div style="text-align: center; font-weight: 700; font-size: 24px; color: #FF4500; margin-bottom: 5px;">
+            🚀🔥 Developed by <span style="color:#00CED1;">PRAISE ADEYEYE</span> 🔥🚀
+        </div>
+        <div style="text-align: center; font-style: italic; font-size: 18px; color: #32CD32; margin-bottom: 20px;">
+            "Engineering the future, one alloy at a time!" 💥⚙️💡
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+    
     st.markdown("### Tensile and Corrosion Property Prediction for High Entropy Alloys")
 
     menu = ["Prediction Tool", "Data Summary", "Model Evaluation"]
@@ -135,7 +149,14 @@ def main():
         run_eda()
     elif choice == "Model Evaluation":
         model_eval()
-
-
-if __name__ == '__main__':
-    main()
+        
+    # === FOOTER with copyright info ===
+    st.markdown(
+        """
+        <hr style="margin-top: 50px; margin-bottom: 10px;">
+        <div style="text-align: center; font-size: 14px; color: #888888;">
+            &copy; {year} Praise Adeyeye. All rights reserved.
+        </div>
+        """.format(year=pd.Timestamp.now().year),
+        unsafe_allow_html=True,
+    )
